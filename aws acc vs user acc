@@ -1,0 +1,10 @@
+
+aws acc is not the same as user acc
+it is a container for users and resources
+need and unique email and credit card. For different aws accounts can be used the same credit card
+the first user create is root user and cannot be restricted
+It is good to have more than one aws acc, because it has a leak or any issue doesnt affect the entire company
+By default external access are denied except root user
+
+Identity and Access Management (IAM) service can create groups, roles, users and given full or limited permissions. When created
+they dont have any access to aws acc
