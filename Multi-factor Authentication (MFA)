@@ -1,0 +1,18 @@
+
+when useername and password are leak avoid anyone to access your acc. More factors more secure.
+
+know - password, username
+have - card, mfa device
+be - fingerprint, voice, face
+location - where you are (gps) or network system (home or business)
+
+
+================== AWS ==================
+
+My security credentials (drop down) > assign MFA > Select MFA device and follow the steps
+for production it is good to have hardware token.
+for training accounts virtual device MFA
+
+https://authy.com/
+
+
