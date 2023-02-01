@@ -1,0 +1,8 @@
+
+
+on-demand self service - can provision capabilities (features, products, vms, networking, db) as needed w/o requiring human interaction
+
+broad network access - capabilities are available over the network  and accessed through ssh, http(s), rdp, vpn.
+
+resource pooling
+
