@@ -59,3 +59,17 @@ now to access use the  https://<ID>.signin.aws.amazon.com/console ->sign in URL 
  after generate the access keys -> access key ID + Secret access key (this can only be download/see once)
  To use CLI you need both -> access key ID + Secret access key
  
+ login in the iamadmin acc general and production
+ My security credentials > click create access key
+ important need to install aws cli on your OS. just follow the guide in this link
+ https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+ 
+ on the cmd
+ aws configure --profile iamadmin-general
+ AWS Access Key ID [None]: AAAAAAAAAAAAAAAAAAAAA
+AWS Secret Access Key [None]: xxxxxxxxxxxxxxxxxxxxx
+Default region name [None]: us-east-1
+Default output format [None]:             # leave empty
+
+aws s3 ls --profile iamadmin-general      # just to test the acc, this command list the buckets in the acc
+ 
