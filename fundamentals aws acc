@@ -6,5 +6,21 @@ the first user create is root user and cannot be restricted
 It is good to have more than one aws acc, because it has a leak or any issue doesnt affect the entire company
 By default external access are denied except root user
 
+
 Identity and Access Management (IAM) service can create groups, roles, users and given full or limited permissions. When created
 they dont have any access to aws acc
+
+
+To secure the AWS acc use MFA
+To avoid unintended costs use the budget
+best practice IAM admin instead use root user
+
+
+impoortant to add details in - Alternate Contacts
+https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact-alternate.html
+
+tick the box and update under IAM user/role access to billing information is activated.
+
+check the region is Global
+
+
