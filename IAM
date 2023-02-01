@@ -23,3 +23,39 @@ IAM can creeate user, group and role
     IAM identities start with no permissions on an AWS Account
     IAM only controls what is inside your account, not external users
     Identity federation (google, facebook and more to access the aws resource) and MFA auth
+
+
+===============IAM identity ================ create an identity
+
+IAM dashboard
+  AWS Account
+    https://<ID>.signin.aws.amazon.com/console ->sign in URL
+      this is needed to use for IAM users, to make easier is good to use alias
+      
+It is better to create an alias globaly ================ alias
+The account alias must be unique across all Amazon Web Services products.
+
+identity are specific in the account they are created, not like the ID which is globally shown above
+Access management > users > addusers > ( check the box -Enable console access ) > Set permissions (Attach policies directly - (thick the box -> AdministratorAccess))
+at the end can send instructions to the user by email with instructions to access
+
+now to access use the  https://<ID>.signin.aws.amazon.com/console ->sign in URL and the password to access the aws acc.
+
+
+============== IAM Access keys =======================
+ access the account using CLI, APIs
+ long term credentials
+ access keys can be created, deleted, inactive or active
+ 
+ can have 2 sets od access keys, because usually they make rotating access keys. If one is inactive can stop the services, programming to access the acc, 
+ with that you can inactive and active the new set. When generate the second set update all application with the new one and delete the old one.
+ 
+ Root user can have access key bu it is not recommended. 
+ 
+ Iamuser are the only one to use access keys
+ 
+ Iamroles dont use access keys
+ 
+ after generate the access keys -> access key ID + Secret access key (this can only be download/see once)
+ To use CLI you need both -> access key ID + Secret access key
+ 
