@@ -1,6 +1,7 @@
 
 https://aws.amazon.com/free/
 
+#this is for IAM users and role access to billing, so dont need the root access.
 AWS Billing Dashboard > Billing Preferences > tick all the boxes (add the email), so will you receive bill by email and alerts
 
 make sure to save preferences after change
