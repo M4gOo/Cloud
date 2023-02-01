@@ -1,0 +1,25 @@
+
+it is globally resilient service, means any data is always secure across all aws regions
+
+IAM service has full trust on aws like root user (the restrictions are billing control and acc closure)
+
+IAM can creeate user, group and role
+  user - can be humans or applications
+  group - colletion of related users (dev team, prod team, qa team, etc)
+  role - used by AWS services or for grant external access to your acc
+  user VS role - user it is for individual app/user, role are used when the number of thing is uncertain (external users to access the storage in another account)
+  
+  
+  
+  =============== IAM Policy ===================
+  they are objects/documents which allow/deny access to aws services when attached to user/group/role. They itself doesnt do anything
+  
+  
+  IAM has 3 main jobs
+    identity provider - IDP: create, modify and delete identities such as users and roles
+    authenticate (means prove you are who you claim to be - ask username and password) - auth identities such as users and roles
+    authorize - this is based on policies associated with identity
+    
+    IAM identities start with no permissions on an AWS Account
+    IAM only controls what is inside your account, not external users
+    Identity federation (google, facebook and more to access the aws resource) and MFA auth
