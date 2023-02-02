@@ -10,5 +10,5 @@ Resources are pooled toserve multiple cosumers using multi-tenant model
 rapid elasticity - capabilities can be elastically porvisioned and release to scale on demand, to the consumer this capabilities available for provisioning 
 often appear to be unlimited
 
-measured service - resource usage can be monitored, controlled, reported and billed
+measured service - resource usage can be monitored, controlled, reported and billed. Pay what you consume
 
