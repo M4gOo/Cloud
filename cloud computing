@@ -4,5 +4,11 @@ on-demand self service - can provision capabilities (features, products, vms, ne
 
 broad network access - capabilities are available over the network  and accessed through ssh, http(s), rdp, vpn.
 
-resource pooling
+resource pooling - processing, memory, network bandwith, storage. Location independence, no control or knowledge over the exact location of the resource.
+Resources are pooled toserve multiple cosumers using multi-tenant model
+
+rapid elasticity - capabilities can be elastically porvisioned and release to scale on demand, to the consumer this capabilities available for provisioning 
+often appear to be unlimited
+
+measured service - resource usage can be monitored, controlled, reported and billed
 
