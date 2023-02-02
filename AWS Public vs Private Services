@@ -1,0 +1,18 @@
+
+aws service can be categorized two main types. They are referring to networking perspective only
+  private - runs within a VPC, so only within that VPC (virtual private cloud) or connect that VPC can access the service
+  public - accessed using public endpoints, like S3 (S3 can be accessed from anywhere)
+  
+  For public and private are permissions as well as networking, meaning to access a service you need consider networkin and permissions
+  
+  
+  Inside the AWS we have aws private zone where you can create many VPCs
+VPC cant communicate with each other unless you allow it, anything from internet can reach tehse private networks unless you configure it
+Services can be placed, like EC2, this can access the internet and the internet can only access the EC2 inside the VPC if you allow/configure
+they can be connected using on-premises using VPN or direct connection. 
+Can also create and attach an internet gateway to a VPC. this allows access to the public internet, as long as, for example EC2 has public
+  IP address, also allows access to public AWS services such as S3
+
+
+Inside the aws public zone, this run between public internet zone and aws private zone
+this zone is where aws public services operate from, services with public endpoints such as S3
