@@ -1,0 +1,32 @@
+
+AWS have created a global public cloud platform which consists of isolated 'regions' connected together by high speed global networking.
+this is good for HA and resilient to failure
+
+2 types of deployment at global level
+  aws region - area of the world they selected and inside this region is a full deployment of AWS infra. (N Virginia, Ohio, Seou, Sao Paulo, London,..)
+                the allocation for elastic service  in ohio is differente elastic service in sao paulo
+  aws edge location - much more smaller than regions, only have contente distribution services. They are useful for Netflix, because they want to
+                      store the tv shows close to the customer giving low latency and high speed distribution. Edge location are good for
+                      fast efficient data transfer. This case Netflix runs in aws regions and the content in aws edges
+                      
+   for some services it will change for global, other like ec2 you can choose the region location         
+   
+   
+   Benefits for AWS REGIONS
+    isolated fault domain
+    different governance (applys laws)
+    location control gives performance, so you can be close to your customers
+    
+    region code: ap-southeast-2 it used in APIs, CLI
+    region name: gui
+    
+    
+    inside aws region, aws provide multiple availability zones, in sydney there are 3, those zones are isolated and they have own storage, 
+    networking, facilities. So if there is a failure the others zones wont be affected and the service will go to the other zones fully functional
+    and available for usage. As solution arch you can put from 6 virtual serves 2 in each availabilty zone. This will give Region resilient
+    Services can be placed across multiple availabilty to make resilient, for example of service VPC
+    
+    If the Availabilty zone fails that service will fail, if the service is put in only one AZ
+    
+    
+    
