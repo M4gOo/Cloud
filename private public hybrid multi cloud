@@ -1,0 +1,5 @@
+
+public cloud - aws, azure, google
+muti-cloud - use mix coud public providers. it will make high availability.
+private coud on premises - run from your business premises aws outpost, azure stack, anthos (google). This cloud must match with the 5 caracterists of cloud computing definition
+hybrid cloud when use public and private cloud cooperating together as a single environment 
