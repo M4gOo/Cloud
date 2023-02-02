@@ -1,0 +1,31 @@
+
+VPC are services to create private networks inside aws that other private services will run from
+it is a servive to connect your on premises network to aws private network when creating a hybrid environment.
+service which allows to connect to other cloud platforms when creating multi cloud deployment
+ 
+vpc is a virtual network inside aws. 
+You are doing within an aws acc and region. Operates from multiple availability zones
+by defaulkt is private and isolated even from other vpcs unless you allow
+
+there are 2 types default and custom
+one default vpc per region, but can have many customs vpcs in a region
+custom need configura 100% and they are private by default
+the defaul can removed and recreated
+default can already configure, the structure are the same, pretty limiting for production deployments, it is not flexible as custom
+
+
+
+They always have the same IP range and same '1 subnet per AZ' architecture. Which is 172.31.0.0/16
+The resiliency comes with the divide subnet, every division are located in a differnet AZ.
+Those subnets are divided /20 subnet
+
+vpc default comes IGW (internet gateway), SG (security group) and NACL
+
+by default, anythiong places in the default vpcs subnet is assigned a public IPv4
+
+best poractice to no use the default vpc
+
+
+================== how to create in aws acc================
+serach for vpc > your vpcs > you see it is already created a default vpc
+              > subnets > you see the subnets already create over the AZ
