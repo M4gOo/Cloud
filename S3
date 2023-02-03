@@ -1,0 +1,31 @@
+
+simple storage service - S3
+global storage 
+buckets names are globally unique, 3 to 63 characters, lower case,nounderscore cant be 1.1.1.1
+they are some limits 100soft limit 1000 hard per account in aws acc, to work around make some prefix (acting like folders) that way multiple users in the same bucket
+regional resilient, data is replicated across availability zones in that region
+public service, unlimited data and multi-user
+can be access using GUI,cli,api,http
+S3 is an object store, it is not a file/block storage system. You cannot browser through the bucket like file share in windows, also you cannot mount 
+because it is not a block/volume. Block storage when you mount in the instances they are basically virtual hard disk (EC2 we have EBS)
+
+S3 is good for large scale data storage, distribution or upload
+
+S3 should be your default store data for any input to aws services or output from aws services 
+
+S3 delivers objects and buckets
+  Objects - are the data the S3 stores
+  Buckets - are containers for objects
+
+objects are made up two main components - key: photo_name.png (identify the object inside the bucket)
+                                          value: content/data of the object (sequence of binary data), the size can be 0 to 5TB
+objects also has version id, metadata, access control and subresources
+
+buckets are created in a specific AWS region, never leaves that region unless you configure it
+needs to be globally unique, so the name must be unique
+only fails when happens a blast radius, when the region had a disaster.
+buckets can hold unlimited objects (the size can be 0 to 5TB)
+it is flat structure, they are stored at the same level, stored at the root level
+folders in S3 are represented when we have objects names structure like /old/photo1.jpg, when you see on GUI it will represent as a folder
+
+
