@@ -1,0 +1,28 @@
+
+It allows you to provision virtual machines known as instances with resources you select and an operating system of your choosing.
+
+it is IaaS
+it is a private service, means runs in the private AWS zone
+it is AZ resilient
+on demand billing
+use storage local on-host or elastick block store (EBS)
+when you terminated a instance you can not go bck to running or stopped state. Those instances matters because of the costs. When is running consume netwok,cpu,
+memory and storage, when stopped only storage is running. When terminated anything is using.
+
+AMI - amazon machine image - can be used to create an EC2 instance or can be create from an EC2
+AMI contains attached permissions, can be set public (everyne can launch images from ami), owner implicit allow (private), explicit specific aws acc allowed
+AMI contains the boot volume (c:/ and /)
+AMI contains block device mapping - determines which volume is the boot volume and hich is data volume
+The OS expect to receive volumes presented to it as well as an ID and the block device mapping links the volume to the device ID
+
+
+================ EC2 on the console ======================
+first thing is to create key pairs, then create the instance. After creation wait for status check and instance state be completed. Aws does a chekc in those instances
+
+To connect to instance (tere are many ways), right click on instance > connect > ssh client
+if is windows use this link (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/openssh.html)
+
+
+
+
+
