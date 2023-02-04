@@ -1,9 +1,19 @@
 
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
+
 it is a tool to create, update and delete infra in aws
 templates for resources, yaml format
+it is portable can be used in any aws region
 all templates have a list of resources, at least one -it is mandatory as well. this section tell CFN what to do 
+everything inside the resources is called logical resource, for example instance. They have type and properties to configure in a certain way
+then it will create a stack from template contain all logical resource. Template can create many stacks using a same template
+any logical resource in the stack, CFN makes a corresponding physical resource in aws acc
+
+
 if there is an awstemplateformaversion the description must follow the template format version
 metadata control how the different thing in the CFN template are presented through the console UI
 parameterss can add fields which pormpt user more info
 mappings allow to create lookup tables
 conditions decision make in the template
+
+when create the CFN it will create one event per logical and pyshical allocation, so it will be one event per resource
