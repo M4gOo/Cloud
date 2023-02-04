@@ -1,6 +1,7 @@
 
 simple storage service - S3
 global storage 
+S# by default is private even says Object can be public, but this doesnt mean it is open for public, just says CAN be public.
 buckets names are globally unique, 3 to 63 characters, lower case,nounderscore cant be 1.1.1.1
 they are some limits 100soft limit 1000 hard per account in aws acc, to work around make some prefix (acting like folders) that way multiple users in the same bucket
 regional resilient, data is replicated across availability zones in that region
@@ -27,5 +28,11 @@ only fails when happens a blast radius, when the region had a disaster.
 buckets can hold unlimited objects (the size can be 0 to 5TB)
 it is flat structure, they are stored at the same level, stored at the root level
 folders in S3 are represented when we have objects names structure like /old/photo1.jpg, when you see on GUI it will represent as a folder
+s3 doenst really have folders, folders are emulated using prefixes
+
+All resources have a unique identifier - ARN - amazon resource name
+
+to delete buckeyt, first empty the bucket and then delete.
+
 
 
