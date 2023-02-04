@@ -1,0 +1,9 @@
+
+it is a tool to create, update and delete infra in aws
+templates for resources, yaml format
+all templates have a list of resources, at least one -it is mandatory as well. this section tell CFN what to do 
+if there is an awstemplateformaversion the description must follow the template format version
+metadata control how the different thing in the CFN template are presented through the console UI
+parameterss can add fields which pormpt user more info
+mappings allow to create lookup tables
+conditions decision make in the template
